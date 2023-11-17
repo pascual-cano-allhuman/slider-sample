@@ -25,9 +25,7 @@ const setupSlider = slider => {
 	// on buttons click
 	const onNextClick = () => container.scrollTo({ left: cardsLeftOffset[nextCard], behavior: "smooth" });
 	next.addEventListener("click", onNextClick);
-	const onPrevClick = () => {
-		container.scrollTo({ left: cardsRightOffset[prevCard] - container.offsetWidth, behavior: "smooth" });
-	};
+	const onPrevClick = () => container.scrollTo({ left: cardsRightOffset[prevCard] - container.offsetWidth, behavior: "smooth" });
 	prev.addEventListener("click", onPrevClick);
 };
 
