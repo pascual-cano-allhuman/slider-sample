@@ -15,6 +15,48 @@
 /* Mixins, helpers and functions */
 @import "base/mixins";
 
-/* Vendor */
-
 /* Components */
+html {
+	font-family: "DINP-R";
+	font-size: 10px;
+}
+
+body {
+	font-size: 1.6rem;
+	padding: 2rem;
+}
+
+.slider {
+	max-width: 60rem;
+	.slider__buttons {
+		display: flex;
+		justify-content: flex-end;
+		gap: 1rem;
+		margin-bottom: 1rem;
+	}
+
+	.slider__container {
+		overflow-x: scroll;
+		overflow-y: hidden;
+
+		user-select: none;
+		scrollbar-width: none;
+		&::-webkit-scrollbar {
+			display: none;
+		}
+	}
+
+	ul {
+		display: flex;
+		gap: 2rem;
+	}
+
+	li {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-width: 20rem;
+		aspect-ratio: 1;
+		background: pink;
+	}
+}
